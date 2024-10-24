@@ -1,0 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: figtree;
+  src: url(/assets/fonts/static/Figtree-ExtraBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: figtree;
+  src: url(/assets/fonts/static/Figtree-SemiBold.ttf);
+  font-weight: 400;
+}
+
+h1{
+  font-size: 1.5em;
+  
+}
+h1:hover{
+   color: #F4D04E;
+   cursor: pointer;
+}
+
+p{
+  font-size: 1.1em;
+  line-height: 1.4em;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: figtree;
+  height: 100vh;
+  background-color: #F4D04E;
+  font-size: 12px;
+}
+
+.contener {
+  display: flex;
+  gap: 10px;
+  /* justify-content: center; */
+  flex-direction: column;
+  border-radius: 10px;
+  width:16.5rem;
+  max-height: 90vh;
+  background-color: white;
+  border: 2px solid;
+  border-width: 1px 7px 7px 1px;
+  padding: 1rem;
+ 
+}
+
+.image {
+  border-radius: 10px;
+}
+
+.contener button {
+  font-family: figtree;
+  font-weight: bold;
+  flex: start;
+  border: none;
+  width: 12vh;
+  border-radius: 3px;
+  padding: 4px;
+  margin: 2px;
+  background-color: #F4D04E;
+
+}
+
+
+div div:has(.img) {
+  display: flex;
+  gap: 5px;
+}
+
+.img {
+  height: 2.2rem;
+  padding: 7px;
+}
+
+.img+h3 {
+  text-align: center;
+  margin-top: 10px;
+}
